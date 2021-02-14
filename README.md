@@ -16,4 +16,4 @@
      CSS
 
    # Portfolio In Use
-    ![](assets/portfolio.gif)
+    ![](./assets/portfolio.gif)
