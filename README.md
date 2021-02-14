@@ -16,4 +16,4 @@
      CSS
 
    # Portfolio In Use
-    ![portfolio](https://github.com/Vinyl77/Cemetry-Gates/blob/main/assets/portfolio.gif)
+    ![portfolio](/assets/portfolio.gif)
