@@ -16,4 +16,4 @@
      CSS
 
    # Portfolio In Use
-    ![](./assets/portfolio.gif)
+    ![portfolio](https://imgflip.com/gif/4xyar0)
