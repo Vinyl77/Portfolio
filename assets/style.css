@@ -1,0 +1,264 @@
+
+:root{
+    --ocean: aqua;
+    --snow: white;
+    --cloudy: gray;
+    --grass: green;
+}
+*{
+
+  box-sizing: border-box;
+
+
+}
+body{
+    background-image:url("./records.jpg");
+    padding: 0;
+    margin-left: auto;
+    margin-right:auto;
+    font-family: 'nunito','sans serif';
+}
+
+#mainwrapper {
+    background-image: url("./rothko.jpg");
+    background-position: center;
+    padding-bottom: 20px;
+    display:flex;
+    justify-content: space-between;
+    align-items: cen;
+    
+  
+}
+#mainwrapper h1{
+    background-color: var(--ocean);
+    padding:30px;
+    margin-left: 20px;
+    color: var(--snow);
+    text-decoration: underline white;
+    font-size: 40px;
+   
+}
+#mainwrapper ul{
+    margin-right: 50px;
+    list-style: none;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+    font-size: 30px;
+    text-indent: 20px;
+    background-color:var(--ocean);
+    color: var(--snow);
+    padding: 20px 20px 20px 20px;
+
+}
+#mainwrapper ul li{
+    margin-right: 10px;
+}
+      
+
+
+
+a {
+    color:var(--snow);
+    font-family: 'nunito','sans serif';
+    
+}
+
+
+.Content{
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+}
+.Content h2{
+    display: flex;
+    font-size: 50px;
+    justify-content: center;
+    padding-top: 10px;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+
+#about{
+    color: var(--snow)
+
+}
+
+
+#content-image{
+    width:25%;
+    height:30%;
+    border-radius: 50px 50px 50px 50px;
+    padding-top: 5px;
+    margin-right: auto;
+    margin-left:auto;
+    box-shadow: 10px 10px 10px black;
+
+}
+
+
+.Content p{
+ 
+    font-size: 20px;
+    line-height: -10px;
+    background-color:var(--cloudy);
+    margin-right:50px;
+    margin-left:50px;
+    text-indent:15px;
+    flex-direction: column;
+    color: var(--snow);
+    padding: 15px 40px 15px 40px;
+    border-style: solid;
+}   
+    
+.expo {
+    display:flex;
+    padding:  20px; 
+    font-size: 30px;
+    flex-direction: column;
+
+
+    
+}
+.expo h2{
+    display: flex;
+    justify-content: center;
+    color:var(--snow);
+    font-size: 50px;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    
+}
+.expo ul{
+    background-color:var(--cloudy);
+    flex-direction: column;
+    color:var(--snow);
+    font-size: 20px;
+    margin: auto;
+    padding: 10px 40px 10px 40px;
+    font-family:'nunito','sans serif';
+    border-style: solid;
+    list-style: none;
+}
+
+.preview{
+    display:flex;
+    flex-direction:column;
+    padding: 100px;
+}
+    
+ #ptitle{ 
+    display: flex;
+    justify-content: center;
+    color:var(--snow);
+    font-size: 50px;
+    padding: 20px 40px 20px 40px;
+    margin-right: auto;
+    margin-left: auto;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+   
+
+}
+
+.container {
+  position: relative;
+  display: flex;
+  width: 50%;
+  max-width: 300px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right:auto;
+}
+
+.image {
+  width: 110%;
+  height: 110%;
+
+  position: relative;
+
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background:var(--ocean);
+ 
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color:var(--snow);
+  font-size: 40px;
+  padding: 15px;
+  margin-right: 20px;
+  text-align: center;
+  font-weight: 200px;
+}
+
+.container:hover .overlay {
+  opacity: 2;
+}
+.contact{
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+}
+.contact h3{
+    display: flex;
+    font-size: 50px;
+    justify-content: center;
+    padding: 10px;
+    color:var(--snow);
+    margin-left: 40%;
+    margin-right: 40%;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+
+}
+.contact ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    font-size: 30px;
+    font-family:'nunito','sans serif'; 
+    background-color:var(--cloudy);
+    padding:20px;
+    color: var(--snow);
+    text-decoration: underline white;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-style: solid;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+}
+.footer h2{
+    display: flex;
+    justify-content: center;
+    color: var(--snow);
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+
+
+}
+@media screen and (max-width:600px){
+    .Content p, .expo ul, .contact ul{
+        background-color: green;
+    }
+
+/* this was done so fonts will fit within the boxes on mobile phones */
+}
+@media screen and (max-width:650px){
+    .contact ul, .Content p, .expo ul { 
+        font-size:15px;
+    }
+}
+@media screen and (max-width:700px){
+      #mainwrapper {
+          background-image:url("./solaris.png");
+      }
+}
+
+@media screen and (max-width:650px){
+    #ptitle{
+        font-size: 27px;
+    }
+}
