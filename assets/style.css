@@ -88,6 +88,7 @@ a {
 
 
 #content-image{
+    display: flex;
     width:25%;
     height:30%;
     border-radius: 50px 50px 50px 50px;
@@ -95,6 +96,8 @@ a {
     margin-right: auto;
     margin-left:auto;
     box-shadow: 10px 10px 10px black;
+    justify-content: center;
+    
 
 }
 
