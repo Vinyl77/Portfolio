@@ -196,7 +196,7 @@ a {
   background:var(--ocean);
  
   color: #f1f1f1; 
-  width: 100%;
+  width: 95%;
   transition: .5s ease;
   opacity:0;
   color:var(--snow);
@@ -227,7 +227,7 @@ a {
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 
 }
-.contact ul {
+.contact a {
     display: flex;
     justify-content: center;
     list-style-type: none;
