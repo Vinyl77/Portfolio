@@ -1,94 +1,90 @@
-
-:root{
-    --ocean: aqua;
-    --snow: white;
-    --cloudy: gray;
-    --grass: green;
-}
-*{
-
-  box-sizing: border-box;
-
-
-}
-body{
-    background-image:url("./records.jpg");
-    padding: 0;
-    margin-left: auto;
-    margin-right:auto;
+body {
     font-family: 'nunito','sans serif';
-}
-/* this is for all the properties within the header */
-#mainwrapper {
-    background-image: url("./rothko.jpg");
-    background-position: center;
-    padding-bottom: 20px;
-    display:flex;
-    justify-content: space-between;
-    align-items: cen;
-    
-  
-}
-#mainwrapper h1{
-    background-color: var(--ocean);
-    padding:30px;
-    margin-left: 20px;
-    color: var(--snow);
-    text-decoration: underline white;
-    font-size: 40px;
-   
-}
-#mainwrapper ul{
-    margin-right: 50px;
-    list-style: none;
-    display:flex;
-    justify-content: space-between;
-    flex-direction: row;
-    font-size: 30px;
-    text-indent: 20px;
-    background-color:var(--ocean);
-    color: var(--snow);
-    padding: 20px 20px 20px 20px;
-
-}
-#mainwrapper ul li{
-    margin-right: 10px;
-}
-
-
-
-/* this is for the anchor tags within the main wrapper */
-a {
-    color:var(--snow);
-    font-family: 'nunito','sans serif';
-    
-}
-/* this is where mainwrapper ends */
-
-
-/* this is where bio properties begin */
-.Content{
-    display: flex;
-    padding: 10px;
-    flex-direction: column;
-}
-.Content h2{
-    display: flex;
-    font-size: 50px;
-    justify-content: center;
-    padding-top: 10px;
+    text-align: center;
+    background-image: url("./records.jpg"); 
+    color: white;
+    font-style: bolder;
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 
-/* made this an id, needed to one specific thing */
-#about{
-    color: var(--snow)
+p {
+    font-size: 20px;
+    padding: 5px;
+    line-height: 28px;
+}
 
+h1 {
+    font-size: 40px;
+    padding: 20px;
+    letter-spacing: 2px;
+    text-decoration: underline;
+}
+
+.subheader{
+    letter-spacing: 4px;
+}
+
+h2 {
+    font-size: 24px;
+    padding: 20px;
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
 }
 
 
-#content-image{
-    display: flex;
+/* Navigation */
+
+.topnav {
+    background-color:green;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.topnav a:hover {
+    background-color:yellowgreen;
+    color: white;
+}
+
+.topnav a.active {
+    /* background-color: #a4dfa6; */
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+/* hero container*/
+.hero {
+    margin-top: 40px;
+    padding: 40px;
+}
+
+.about-me-photo {
+    margin: auto;
+    padding: 0px 25px;
+}
+.about-me-photo img {
+    /* border-radius: 150px; */
     width:25%;
     height:30%;
     border-radius: 50px 50px 50px 50px;
@@ -96,184 +92,184 @@ a {
     margin-right: auto;
     margin-left:auto;
     box-shadow: 10px 10px 10px black;
-    justify-content: center;
-    
-
-}
-
-
-.Content p{
- 
-    font-size: 20px;
-    line-height: -10px;
-    background-color:var(--cloudy);
-    margin-right:50px;
-    margin-left:50px;
-    text-indent:15px;
-    flex-direction: column;
-    color: var(--snow);
-    padding: 15px 40px 15px 40px;
-    border-style: solid;
-}  
-/* this is where all the bio content ends */
-
-
-
-/*  this is for all the content in the expo class*/
-.expo {
-    display:flex;
-    padding:  20px; 
-    font-size: 30px;
-    flex-direction: column;
-
-
     
 }
-.expo h2{
-    display: flex;
-    justify-content: center;
-    color:var(--snow);
-    font-size: 50px;
-    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-    
-}
-.expo ul{
-    background-color:var(--cloudy);
-    flex-direction: column;
-    color:var(--snow);
-    font-size: 20px;
+
+
+/* add container width to about me*/
+.about-me {
+    max-width: 700px;
     margin: auto;
-    padding: 10px 40px 10px 40px;
-    font-family:'nunito','sans serif';
-    border-style: solid;
-    list-style: none;
+    margin-top: 40px;
 }
-/* this is where all the expo content ends */
 
-
-
-/* this is for the header in the preview class */
-.preview{
-    display:flex;
-    flex-direction:column;
-    padding: 100px;
+/* Style about me so that about me and contact are side-by-side*/
+.about-me-section {
+    display: flex;
 }
-    
- #ptitle{ 
+
+.about-me-text h2 {
+    padding: 20px 5px;
+}
+
+.about-me-text {
+    margin: auto;
+    padding: 0px 25px;
+    text-align: left;
+}
+.contact-links {
+    text-decoration: underline;
+    color: white;
+}
+.contact-links:hover {
+    color: rgb(0, 145, 255)
+}
+
+/*css grid my-work images*/
+.my-work h2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+my-work {
+    padding: bottom 10px;
+}
+.img-thumbnail{
+    width: 110%;
+    height: 100%;
+
+}
+/* .portfolio-cards {
     display: flex;
     justify-content: center;
-    color:var(--snow);
-    font-size: 50px;
-    padding: 20px 40px 20px 40px;
-    margin-right: auto;
-    margin-left: auto;
-    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-   
-
-}
-/* this is for the content images within preview class */
-.container {
-  position: relative;
-  display: flex;
-  width: 50%;
-  max-width: 300px;
-  padding: 20px;
-  margin-left: auto;
-  margin-right:auto;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin: 20px;
 }
 
-.image {
-  width: 110%;
-  height: 110%;
+.portfolio-cards p {
+    color: rgb(58, 58, 58)
+} */
 
-  position: relative;
+/*
+.portfolio-cards > article {
+    flex-wrap: wrap;
+    width: 50%;
+}
+#largest-card {
+    width: 100%;
+}
+.portfolio-cards img{
+    padding: 25px 35px 35px 35px;
+    flex: auto;
+    width: 100%;
+    height: 400px;
+} */
 
-}
 
-.overlay {
-  position: absolute; 
-  bottom: 0; 
-  background:var(--ocean);
- 
-  color: #f1f1f1; 
-  width: 95%;
-  transition: .5s ease;
-  opacity:0;
-  color:var(--snow);
-  font-size: 40px;
-  padding: 15px;
-  margin-right: 20px;
-  text-align: center;
-  font-weight: 200px;
+/*overlay text on image*/
+/* #portfolio-card-item {
+    position: relative;
 }
+#portfolio-card-item > h3 {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    background-color: rgba(255, 255, 255, 0.426);
+} */
 
-.container:hover .overlay {
-  opacity: 2;
+/* images show border when hovered over */
+/* .portfolio-cards > article {
+    transition: 0.3s;
 }
-/* this is for the contact info parent */
-.contact{
-    display: flex;
-    padding: 10px;
-    flex-direction: column;
-}
-.contact h3{
-    display: flex;
-    font-size: 50px;
-    justify-content: center;
-    padding: 10px;
-    color:var(--snow);
-    margin-left: 40%;
-    margin-right: 40%;
-    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+.portfolio-cards > article:hover {
+    transform: scale(1.06);
+    cursor: pointer;
+}  */
 
-}
-.contact li{
-    display: flex;
-    justify-content: center;
+
+/* remove bullets from unordered list under contacts */
+.contact-info ul {
     list-style-type: none;
-    font-size: 30px;
-    font-family:'nunito','sans serif'; 
-    background-color:var(--cloudy);
-    padding:20px;
-    color: var(--snow);
-    text-decoration: underline white;
-    margin-left: 20%;
-    margin-right: 20%;
-    border-style: solid;
-    
-}
-.footer{
-    display: flex;
-    flex-direction: column;
-}
-.footer h2{
-    display: flex;
-    justify-content: center;
-    color: var(--snow);
-    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    margin-bottom: 30px;
+    line-height: 24px;
+  }
+
+/* Footer */
+
+footer {
+    background-color:green;
+   padding: 20px;
+    color: #f2f2f2;
+
+    text-decoration: none;
+    font-size: 30px; 
 
 
 }
-@media screen and (max-width:600px){
-    .Content p, .expo ul, .contact ul{
-        background-color: green;
-    }
+.overlay{
 
-/* this was done so fonts will fit within the boxes on mobile phones */
+
+    position: absolute; 
+    bottom: 0; 
+    background:yellowgreen;
+   
+    color: #f1f1f1; 
+    width: 92%;
+    transition: .5s ease;
+    opacity:0;
+
+    font-size: 40px;
+    padding: 15px;
+    margin-right: 20px;
+    text-align: center;
+    font-weight: 200px;
+
 }
-@media screen and (max-width:650px){
-    .contact ul, .Content p, .expo ul { 
-        font-size:15px;
+.container:hover .overlay {
+    opacity: 2;
+  }
+.container{
+    padding-bottom: 3%;
+}
+
+
+/* 
+/* @media screen and (max-width: 550px) {
+    .about-me-section {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: center;
+        align-items: stretch;
     }
-/* Background changes on the header when screen size decreased */
-@media screen and (max-width:700px){
-      #mainwrapper {
-          background-image:url("./solaris.png");
-      }
-}
-/* font size changes to fit in its border when screen size is decreased  */
-@media screen and (max-width:650px){
-    #ptitle{
-        font-size: 27px;
+    .topnav a {
+        padding: 10px 12px;
+        font-size: 14px;
+        letter-spacing: 1px;
     }
-}
+    .portfolio-cards > article {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+} * */
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }

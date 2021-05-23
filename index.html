@@ -1,122 +1,118 @@
+
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8" />
-
-<title>Richard Yvarra Portfolio</title>
+    <head>
+        <title>Richard Yvarra</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/css/reset.css" /> 
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="./assets/style.css"/>
 
-<link rel="stylesheet" href="./assets/reset.css"/>
+    </head>
 
-<link rel="stylesheet" href="./assets/style.css"/>
+    <body>
+      <div class="background">
+   
+        <header id="home">
+            <nav class="topnav" id="myTopnav">
+                <a href="#home" class="active">Home</a>
+                <a href="#about-me">About Me</a>
+                <a href="#my-work">My Work</a>
+                <a href="#contact-info">Contact Info</a>
+                <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+                    <i class="fas fa-bars"></i>
+                  </a>
+            </nav>
+            <div class="hero">
+                <article class="about-me-photo">
+                    <img src="./assets/richardyvarra.jpg" width="150px">
+                </article>  
+                <h1>Richard Yvarra</h1>
+                <p class="subheader">&ltfledgling&gt Full Stack Web Developer</p>
+                <p>HTML, CSS, JavaScript, jQuery, NodeJS, Express, MySQL</p>
+                <!-- <p class="subheader">current bootcamp student</p> -->
+            </div>
+        
+        </header>
 
-</head>
-
-<body>
- <!-- this is for the header and anchor tags -->
-   <header id="mainwrapper">
-      <h1>Richard Yvarra</h1> 
-    
-           <ul>
-            <li>
-                   <a href="#about">about</a>
-            </li>
-            <li>
-                <a href="#applications">work</a>
-            </li>
-                
-            <li>
-                <a href="#email">contact</a>
-            </li>
-            
-               
-           </ul>
-    </header>
-    <!--This div is for the content in the bio -->
-    <div id= "about" class="Content">
-           <a href="https://whupfm.org/show/vinyl-fetish/" target="_blank">
-           <img id="content-image" src="./assets/richardyvarra.jpg"/></a>
-           <h2 > About Me:</h2>
-           
+        <main>
+            <section class="about-me" id="about-me">
+                <div class="about-me-section">
+                    <article class="about-me-text">
+                        <h1>About Me</h1>
+                         
              <p>
                  
-                I have worked in the grocery industry for over twenty years.
-              After numerous injuries and aging gracefully, i've decided to seek a new path.
-              Web development has always been an interest to me, but the thought of learning many
-              languages of technology was overwhelming. So I took the leap and enrolled in boot camp.
-              Now, I am here showing off my work.
-            </p>
-    </div>
-  <!--this is for the applications  -->
-    <div id="applications" class="expo">
-       <h2>Applications:</h2>
-           <ul>
-               <li>HTML</li>
-               <li>CSS</li>
-               <li>Javascript: soon</li>
-               <li>Currently Attending Coding Boot Camp</li>
-           </ul>
-    </div>
-    <!-- this is for the preview work -->
-    <div id="work" class="preview">
-        <h2 id="ptitle">Previewed Works:</h2>
-        <div class="row">
-            <div class="container">
-               <a href="https://vinyl77.github.io/Refactored-Code/" target="_blank">
-               <img alt= "Refactor"  src="assets/horiseon.png" alt="Avatar" class="image"></a>
-                <div class="overlay">Refactor</div>
-              </div>
-              <div class="container">
-                <a href="https://vinyl77.github.io/prework-about-me/" target="_blank">
-                <img src="assets/prework.jpg.png" alt="Avatar" class="image"></a>
-                <div class="overlay">Prework</div>
-              </div>
-              <div class="container">
-                <a href= "https://vinyl77.github.io/password-generator/" target="_blank">
-                <img src="assets/password.png" alt="Avatar" class="image"></a>
-                <div class="overlay">Password Generator</div>
-              </div>
-              <div class="container">
-                <a href="https://vinyl77.github.io/Code-Quiz-Project/" target="_blank">
-                <img src="assets/quiz.png" alt="Avatar" class="image"></a>
-                <div class="overlay">Code Quiz</div>
-              </div>
-              <div class="container">
-                <a href="https://vinyl77.github.io/Workday-Planner" target="_blank">
-                <img src="assets/scheduler.png" alt="Avatar" class="image"></a>
-                <div class="overlay">Workday Scheduler</div>
-              </div>
-              <div class="container">
-                <a href="https://vinyl77.github.io/Weather-Dashboard/" target="_blank">
-                <img src="assets/dashboard.png" alt="Avatar" class="image"></a>
-                <div class="overlay">Weather Dashboard</div>
-              </div>
-              <div class="container">
-                <a href="https://smakela13.github.io/project-buddy-finder/" target="_blank">
-                <img src="assets/project.png" alt="Avatar" class="image"></a>
-                <div class="overlay">Project SARD</div>
-              </div>
-             </div>
-         <!--this is for the contact  -->
-    <div class="contact" id="email">
-            <h3>Contact:</h3>
-            <ul>
-           <li><a href="mailto: richard.yvarra@gmail.com">Richard.Yvarra@gmail.com</a></li>
-           <br>
-            <li><a href="https://github.com/Vinyl77" target="_blank">Github Profile</a></li>
-            <br>
-            <li><a href="https://drive.google.com/file/d/1X2rX_etULbS7ZWOusLOZqmS5sh636PWT/view" target="_blank">Resumé</a></li>
-           </ul>
-    </div>
-    <div>
-    <!-- this is for the footer obviously -->
-    <footer class="footer">
-        <h2>made by @rchive77</h2>
+              I have worked in the grocery industry for over twenty years.
+            After numerous injuries and aging gracefully, i've decided to seek a new path.
+            Web development has always been an interest to me, but the thought of learning many
+            languages of technology was overwhelming. So I took the leap and enrolled in boot camp.
+            Now, I am here showing off my work.
+          </p>
+                    </article>
+                    <article class="contact-me" id="contact-info">
+                        <h2>Contact:</h2>
+                        <p>
+                            <a href="https://www.linkedin.com/in/richard-yvarra-205131205/" target="_blank" class="contact-links"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        </p>
+                        <p>
+                            <a href="https://github.com/Vinyl77" target="_blank"class="contact-links"><i class="fab fa-github-square"></i> GitHub</a>
+                        </p>
+                        <p>
+                            <a href="https://docs.google.com/document/d/1VdP0saiVc40k9r3vgMj-xq5tgyG4Mk043Fc8OT70OfA/edit?usp=sharing" target="_blank"class="contact-links"> <i class="fas fa-file"></i> Resume</a>
+                        </p>
+                        <p>
+                            <a  href="mailto: richard.yvarra@gmail.com" target="_blank" class="contact-links"><i class="fas fa-envelope-square"></i> Email</a>
+                            
+                        </p>
+                        <!-- <p>
+                            <i class="fas fa-phone-square"></i> 919-438-3148
+                        </p> -->
 
-    </footer>
-    </div>
+                    </article>
 
+                </div>
+            </section>
+            <section class="my-work" id="my-work">
+              <h1>My Work</h1>
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <a href="https://github.com/Vinyl77/note-taker" target="_blank">
+                      <img src="assets/note2.png" alt="Avatar" class="img-thumbnail"></a>
+                      <div class= "overlay">Note Taker</div>
 
-</body>
+                  </div>
+                  <div class="col order-2">
+                    <a href="https://github.com/Vinyl77/Employee-Tracker" target="_blank">
+                      <img src="assets/employee.png" alt="Avatar" class="img-thumbnail"></a>
+                      <div class= "overlay">Employee Tracker</div>
+
+                  
+                  </div>
+                  <div class="col order-3">
+                    <a href="https://github.com/shatikka-mcknight/Vinyl-Is-Plural-For-Vinyl" target="_blank">
+                      <img src="assets/vinyl.png" alt="Avatar" class="img-thumbnail"></a>
+                      <div class= "overlay">Project 2</div>
+
+                  </div>
+                </div>
+              </div>
+            </section>
+
+  
+        </main>
+
+        <footer>
+            <p>This portfolio is a will change with learned technologies.</p>
+        </footer>
+
+        <script src="script.js"></script>
+        </div>
+    </body>
+</html>
