@@ -4,7 +4,7 @@
 # Application:
    Through second week of boot camp, We as a class learned about advanced CSS.  This was a very complex task, with so much coming at you  at once.  Kinda like trying to take a drink from a firehose.
   
-   This portfolio used many of the different applications of CSS such as Flexbox, Pseudo Elements, Media queries, box styling and typography.
+   This portfolio used many of the different applications of CSS such as bootstrap, javascript , Media queries, box styling and typography.
   
    Even though I didn't use all the applications that CSS has to offer, I cant wait to see what future brings .
   
