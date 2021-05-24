@@ -20,5 +20,5 @@
   ![portfolio](assets/portfolio.gif)
 
   # Link
-  * [https://github.com/Vinyl77/Portfolio]
-  * [https://vinyl77.github.io/Portfolio/]
+  * https://github.com/Vinyl77/Portfolio
+  * https://vinyl77.github.io/Portfolio/
