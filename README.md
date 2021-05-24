@@ -17,7 +17,7 @@
 
    # Portfolio In Use
     
-  ![portfolio](assets/portfolio.gif)
+  ![updatedportfolio](assets/updatedportfolio.gif)
 
   # Link
   * https://github.com/Vinyl77/Portfolio
